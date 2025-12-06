@@ -1,0 +1,87 @@
+/* Polices personnalisées */
+body, footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Couleurs personnalisées */
+.bg-primary {
+    background-color: #1F2A44 !important;
+}
+
+.bg-secondary {
+    background-color: #D9A441 !important;
+}
+
+.bg-gris {
+    background-color: #2F2F2F !important;
+}
+
+.text-primary {
+    color: #1F2A44 !important;
+}
+
+.btn-creme {
+    background-color: #E5DCCF;
+    color: #1F2A44;
+    border: 1px solid #D9A441;
+}
+
+.btn-creme:hover {
+    background-color: #D9A441;
+    color: #1F2A44;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    color: white !important;
+    background-color: #1F2A44 !important;
+    font-size: 14px;
+    }
+
+.navbar .nav-link:hover {
+  color: #D9A441 !important;
+}
+
+/* Footer */
+.vg-footer {
+  background-color: #2F2F2F;
+  color: #D9A441;
+  padding: 20px 20px;
+  margin-top: 60px;
+  font-size: 10px;
+  
+  .container,
+  .container-fluid {
+    padding-left: 100;
+    padding-right: 100;
+  }
+
+  p, a {
+    margin: 0 0 4px 0;
+    line-height: 1.4;
+    font-family: "Roboto", sans-serif;
+  }
+
+  a {
+    color: #D9A441;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+  }
+}
