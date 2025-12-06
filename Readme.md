@@ -13,4 +13,6 @@ Verifier avec la commande si tout est ok
 
     - symfony check:requirements
 
-Une fois les prérequis installé lancé la commande "symfony new my_project_directory --version="8.0.x" --webapp".
+Une fois les prérequis installé lancé la commande
+
+    - symfony new my_project_directory --version="8.0.x" --webapp"
