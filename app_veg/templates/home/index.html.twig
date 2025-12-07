@@ -3,8 +3,35 @@
 {% block title %}Accueil - Vite & Gourmand{% endblock %}
 
 {% block body %}
-<div class="container py-5">
-    <h1 class="mb-4">Bienvenue chez Vite & Gourmand</h1>
-    <p>Traiteur frais, rapide et gourmand 🍽️</p>
-</div>
+<article>
+    <div class="container p-4">
+        <h2 class="text-center text-primary">Bienvenue chez Vite & Gourmand</h2>
+        <div class="row row-cols-2 align-items-center">
+            <div class="col">
+                <p class="text-justify">
+                    Bienvenue sur le site de notre restaurant gastronomique situé au cœur de la magnifique ville de Chambéry. Le chef Arnaut Michant vous invite à découvrir un voyage culinaire mémorable.
+                </p>
+            </div>
+            <div class="col">
+                <img class="w-100 rounded" src="{{ asset('images/food-1050813_1280.jpg') }}" alt="Plat gastronomique">
+            </div>
+        </div>
+        <div class="text-center pt-4">
+            <a href="#" class="btn btn-primary">Nos menus</a>
+        </div>
+    </div>
+    <div class="row row-cols-2 align-items-center">
+        <div class="col">
+            <img class="w-100 rounded" src="{{ asset('images/food-1050813_1280.jpg') }}" alt="Plat gastronomique">
+        </div>
+        <div class="col">
+            <p class="text-justify">
+                Bienvenue sur le site de notre restaurant gastronomique situé au cœur de la magnifique ville de Chambéry. Le chef Arnaut Michant vous invite à découvrir un voyage culinaire mémorable.
+            </p>
+        </div>
+    </div>
+        <div class="text-center pt-4">
+            <a href="#" class="btn btn-primary">Nos menus</a>
+        </div>
+</article>
 {% endblock %}

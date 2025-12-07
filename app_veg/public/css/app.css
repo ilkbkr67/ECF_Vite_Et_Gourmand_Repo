@@ -1,3 +1,14 @@
+:root {
+    --bs-primary: #1F2A44;
+    --bs-secondary: #D9A441;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-bg: #{hex-to-rgb(var(--bs-primary), 0.8)};
+}
+
 /* Polices personnalisées */
 body, footer {
     font-family: 'Roboto', sans-serif;
@@ -74,4 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .vg-footer a:hover {
     text-decoration: underline;
+}
+
+.text-justify {
+    text-align: justify !important;
 }
