@@ -1,6 +1,7 @@
 /* Polices personnalisées */
 body, footer {
     font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +60,6 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23D9A441' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 /* Footer */
-/* Style de base */
 .vg-footer {
     background-color: #2F2F2F;
     color: #D9A441;
@@ -75,40 +75,3 @@ h1, h2, h3, h4, h5, h6 {
 .vg-footer a:hover {
     text-decoration: underline;
 }
-
-/* Alignement par défaut (desktop) */
-.footer-content {
-    text-align: left;
-}
-
-.col-md-4:first-child .footer-content {
-    text-align: center;
-}
-
-/* Responsive mobile (<768px) */
-@media (max-width: 767.98px) {
-    /* Horaires centrés */
-    .col-md-4 .footer-content {
-        text-align: center;
-    }
-
-    /* Adresse et Contact côte à côte */
-    .col-md-8 {
-        padding-top: 20px;
-    }
-
-    /* Espacement entre Adresse/Contact */
-    .col-md-8 .row {
-        --bs-gutter-x: 0; /* Supprime l'espace entre les colonnes */
-    }
-
-    /* Alignement gauche/droite pour Adresse/Contact */
-    .col-md-8 .footer-block:first-child .footer-content {
-        text-align: left;
-    }
-
-    .col-md-8 .footer-block:last-child .footer-content {
-        text-align: right;
-    }
-}
-
