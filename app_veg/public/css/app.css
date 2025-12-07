@@ -1,0 +1,77 @@
+/* Polices personnalisées */
+body, footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Couleurs personnalisées */
+.bg-primary {
+    background-color: #1F2A44 !important;
+}
+
+.bg-secondary {
+    background-color: #D9A441 !important;
+}
+
+.bg-gris {
+    background-color: #2F2F2F !important;
+}
+
+.text-primary {
+    color: #1F2A44 !important;
+}
+
+.btn-creme {
+    background-color: #E5DCCF;
+    color: #1F2A44;
+    border: 1px solid #D9A441;
+}
+
+.btn-creme:hover {
+    background-color: #D9A441;
+    color: #1F2A44;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    color: white !important;
+    background-color: #1F2A44 !important;
+    font-size: 12px;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+    color: white !important;
+    background-color: #1F2A44 !important;
+    font-size: 10px;
+    }
+
+.navbar .nav-link:hover {
+  color: #D9A441 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23D9A441' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+/* Footer */
+.vg-footer {
+    background-color: #2F2F2F;
+    color: #D9A441;
+    padding: 20px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.vg-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.vg-footer a:hover {
+    text-decoration: underline;
+}
