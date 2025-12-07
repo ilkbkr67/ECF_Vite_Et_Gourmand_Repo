@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Vite & Gourmand{% endblock %}</title>
 
     <!-- Google Fonts -->
@@ -18,9 +19,7 @@
 </head>
 
 <body>
-
-   <header>
-      <header>
+    <header>
         <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container-fluid">
               <a class="navbar-brand text-center" href="/" >Vite </br>& </br> Gourmand</a>
@@ -53,56 +52,52 @@
           </nav>
     </header>
 
-    </header>
-
-
-    <!-- ======================= -->
-    <!--         CONTENT         -->
-    <!-- ======================= -->
-    <main class="container py-4">
+    <main>
         {% block body %}{% endblock %}
     </main>
 
-
-    <!-- ======================= -->
-    <!--         FOOTER          -->
-    <!-- ======================= -->
 <footer class="vg-footer">
     <div class="container">
-        <div class="row text-center text-md-start">
-
-            <!-- Bloc horaires -->
-            <div class="col-md-4 mb-3">
-                <p class="footer-title">Nos horaires</p>
-                <p>Du Lundi au Dimanche</p>
+        <div class="row">
+            <!-- Horaires (centré sur mobile, gauche sur desktop) -->
+            <div class="col-md-4 footer-block">
+                <div class="footer-content">
+                    <p>Nos Horaires</br>
+                    Du Lundi au Dimanche</p>
+                </div>
             </div>
 
-            <!-- Bloc adresse -->
-            <div class="col-md-4 mb-3">
-                <p class="footer-title">Adresse</p>
-                <p>Vite & Gourmand</p>
-                <p>3 rue Exemple</p>
-                <p>33000 Bordeaux</p>
-                <p>03 88 88 88 88</p>
-            </div>
+            <!-- Adresse + Contact (groupés sur mobile) -->
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Adresse (gauche sur mobile/tablette) -->
+                    <div class="col-6 footer-block">
+                        <div class="footer-content">
+                            <p>Adresse</br>
+                                Vite & Gourmand</br>
+                                3 rue Semoulois</br>
+                                33000 Bordeaux</br>
+                                03.88.88.88.88</p>
+                        </div>
+                    </div>
 
-            <!-- Bloc contact -->
-            <div class="col-md-4 mb-3">
-                <p><a href="mailto:contact@viteetgourmand.fr">contact@viteetgourmand.fr</a></p>
-                <p><a href="/mentions">Mentions légales et CGV</a></p>
+                    <!-- Contact (droite sur mobile/tablette) -->
+                    <div class="col-6 footer-block">
+                        <div class="footer-content">
+                            <p>Contact</br>
+                            <a href="mailto:contact@viteetgourmand.fr">contact@viteetgourmand.fr</a></br>
+                            <a href="/mentions">Mentions légales et CGV</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
 </footer>
-
-
-    <!-- Bootstrap JS -->
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">
     </script>
-
 </body>
 </html>
